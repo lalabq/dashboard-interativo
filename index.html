@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard interativo</title>
+  <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+  <div class="titulo">
+    <h1>Dashboard de Indicadores Sociais e Demográficos</h1>
+    <h2>Brusque, Santa Catarina e Brasil</h2>
+  </div>
+  
+  <div class="anos">
+    <button class="selected">2017</button>
+    <button>2019</button>
+    <button>2021</button>
+    <button>2023</button>
+  </div>
+
+  <div class="dashboard">
+    <div aria-indicador="População">
+      <h2>População</h2>
+      <div class="bandeiras">
+        <img src="src/images/Bandeira de Brusque.png" alt="Bandeira de Brusque">
+        <img src="src/images/Bandeira de Santa Catarina.png" alt="Bandeira de Santa Catarina">
+        <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+      </div>
+      <div class="valores">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div aria-indicador="Taxa de natalidade (‰)">
+      <h2>Taxa de natalidade (‰)</h2>
+      <div class="bandeiras">
+        <img src="src/images/Bandeira de Brusque.png" alt="Bandeira de Brusque">
+        <img src="src/images/Bandeira de Santa Catarina.png" alt="Bandeira de Santa Catarina">
+        <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+      </div>
+      <div class="valores">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div aria-indicador="Expectativa de vida (anos)">
+      <h2>Expectativa de vida (anos)</h2>
+      <div class="bandeiras">
+        <img src="src/images/Bandeira de Brusque.png" alt="Bandeira de Brusque">
+        <img src="src/images/Bandeira de Santa Catarina.png" alt="Bandeira de Santa Catarina">
+        <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+      </div>
+      <div class="valores">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div aria-indicador="Taxa de analfabetismo (%)">
+      <h2>Taxa de analfabetismo (%)</h2>
+      <div class="bandeiras">
+        <img src="src/images/Bandeira de Brusque.png" alt="Bandeira de Brusque">
+        <img src="src/images/Bandeira de Santa Catarina.png" alt="Bandeira de Santa Catarina">
+        <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+      </div>
+      <div class="valores">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div aria-indicador="Número de matrículas na educação (milhões)" class="img-com-legenda">
+      <h2>Número de matrículas na educação (milhões)</h2>
+      <div class="bandeiras">
+        <figure>
+          <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+          <figcaption>Pré-escolar</figcaption>
+        </figure>
+        <figure>
+          <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+          <figcaption>Ensino fundamental</figcaption>
+        </figure>
+        <figure>
+          <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+          <figcaption>Ensino médio</figcaption>
+        </figure>
+      </div>
+      <div class="valores">
+        <span>8,5</span>
+        <span>27,3</span>
+        <span>7,9</span>
+      </div>
+    </div>
+    <div aria-indicador="Indicadores de habitação" class="img-com-legenda">
+      <h2>Indicadores de habitação (Censo 2022)</h2>
+      <div class="bandeiras">
+        <figure>
+          <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+          <figcaption>Água canalizada</figcaption>
+        </figure>
+        <figure>
+          <img src="src/images/Bandeira do Brasil.jpg" alt="Bandeira do Brasil">
+          <figcaption>Coleta de lixo</figcaption>
+        </figure>
+      </div>
+      <div class="valores">
+        <span>83,88%</span>
+        <span>91,71%</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/scripts/data.js"></script>
+  <script src="src/scripts/script.js"></script>
+</body>
+</html>

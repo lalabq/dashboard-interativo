@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  color: #1f1f1f;
+}
+
+body {
+  background: #f8f8f8 url(../images/bg.jpg) repeat top left;
+}
+
+.titulo {
+  padding: 2rem;
+}
+
+.titulo h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.titulo h2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.anos {
+  padding: 0 2rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  font-weight: 600;
+  flex: 1;
+  padding: 0.4rem 0.7rem;
+  max-width: 100px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #b5b5b5;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #7a7a7a), color-stop(1, #cfcfcf));
+  box-shadow: inset 0px 1px 0px #e0e0e0, 0px 5px 0px 0px #555, 0px 10px 5px #999;
+}
+
+button.selected {
+  background-color: #3bb3e0;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(44, 160, 202)), color-stop(1, rgb(62, 184, 229)));
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 2rem;
+}
+
+.dashboard h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.dashboard > div {
+  padding: 1rem;
+  box-shadow: 0 0 5px 0px rgba(106,106,106,0.73);
+  border-radius: 10px;
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+  background: #ededed;
+}
+
+.dashboard .bandeiras {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.dashboard img, .dashboard-escolar img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px 0px rgba(106,106,106,0.73);
+}
+
+.dashboard .valores {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.dashboard .valores span {
+  width: 72px;
+  text-align: center;
+}
+
+.dashboard .img-com-legenda figcaption {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 75px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dashboard .img-com-legenda .valores {
+  margin-top: 2.2rem;
+}
+
